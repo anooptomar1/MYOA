@@ -12,6 +12,7 @@
 		A748B5FC1F77AE16003E5A82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A748B5FA1F77AE16003E5A82 /* Main.storyboard */; };
 		A748B5FE1F77AE16003E5A82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A748B5FD1F77AE16003E5A82 /* Assets.xcassets */; };
 		A748B6011F77AE16003E5A82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A748B5FF1F77AE16003E5A82 /* LaunchScreen.storyboard */; };
+		A7EEF54C1F77F39D0040C87C /* MYOAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EEF54B1F77F39D0040C87C /* MYOAViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		A748B5FD1F77AE16003E5A82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A748B6001F77AE16003E5A82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A748B6021F77AE16003E5A82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7EEF54B1F77F39D0040C87C /* MYOAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYOAViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		A748B5F51F77AE16003E5A82 /* MYOA */ = {
 			isa = PBXGroup;
 			children = (
+				A7EEF5491F77F3850040C87C /* Views */,
 				A748B5F61F77AE16003E5A82 /* AppDelegate.swift */,
 				A748B5F81F77AE16003E5A82 /* ViewController.swift */,
 				A748B5FA1F77AE16003E5A82 /* Main.storyboard */,
@@ -62,6 +65,22 @@
 				A748B6021F77AE16003E5A82 /* Info.plist */,
 			);
 			path = MYOA;
+			sourceTree = "<group>";
+		};
+		A7EEF5491F77F3850040C87C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A7EEF54A1F77F38D0040C87C /* Controllers */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A7EEF54A1F77F38D0040C87C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A7EEF54B1F77F39D0040C87C /* MYOAViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7EEF54C1F77F39D0040C87C /* MYOAViewController.swift in Sources */,
 				A748B5F91F77AE16003E5A82 /* ViewController.swift in Sources */,
 				A748B5F71F77AE16003E5A82 /* AppDelegate.swift in Sources */,
 			);
