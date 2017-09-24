@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="LGE-9c-x8K">
+            <objects>
+                <navigationController id="qaM-tf-M5m" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VIj-7H-Mb7">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="zR6-LD-MuF" kind="relationship" relationship="rootViewController" id="acB-Q7-DRh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TwF-bd-HAW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-799" y="95"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="TCs-as-1Uh">
+            <objects>
+                <viewController id="zR6-LD-MuF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ppT-52-xy2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="F0R-YS-wJt">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="STV-Kv-16i">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="526"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E5p-oV-fVa">
+                                        <rect key="frame" x="0.0" y="526" width="375" height="38.5"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B0P-Ic-CIV">
+                                        <rect key="frame" x="0.0" y="564.5" width="375" height="38.5"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bxt-RU-BU0" firstAttribute="bottom" secondItem="F0R-YS-wJt" secondAttribute="bottom" id="SGX-Tz-J36"/>
+                            <constraint firstItem="F0R-YS-wJt" firstAttribute="leading" secondItem="bxt-RU-BU0" secondAttribute="leading" id="phC-lD-hb0"/>
+                            <constraint firstItem="F0R-YS-wJt" firstAttribute="top" secondItem="bxt-RU-BU0" secondAttribute="top" id="rq7-bh-CHW"/>
+                            <constraint firstItem="bxt-RU-BU0" firstAttribute="trailing" secondItem="F0R-YS-wJt" secondAttribute="trailing" id="xYg-Al-ycH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bxt-RU-BU0"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="QQi-Ay-zeR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HYv-m8-3IA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26" y="95"/>
+        </scene>
+    </scenes>
+</document>
